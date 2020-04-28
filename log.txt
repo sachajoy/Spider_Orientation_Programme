@@ -1,0 +1,39 @@
+git clone https://github.com/Aayush-Shukla/Spider_Orientation_Programme.git   #to copy the gut repo to the local machine
+
+git checkout -b ayush_shukla    # creating a branch and switching to that branch
+
+git add .   # adding the change in the working area after creating log.txt
+
+git commit -m "log"    # saving changes to the local repo
+
+git checkout master   #changing branch
+
+git checkout -b b1    # creating a branch and switching to that branch
+
+git add .    # adding the change in the working area after creating task.txt with answer in it
+
+git commit -m "answer"
+
+git checkout master   #changing branch
+
+git checkout -b b2    # creating a branch and switching to that branch
+
+git add .    # adding the change in the working area after creating task.txt with answer in it
+
+git commit -m "explanation"    # saving changes to the local repo
+
+git checkout b1    # creating a branch and switching to that branch
+
+git merge b2    # merging b1 and b2 which shows merge conflicts
+
+git add .    # adding the change in the working area after *solving merge conflicts*
+
+git commit -m "resolved merge conflict"    # saving changes to the local repo
+
+git push origin master    #upload local repository content to a remote repository
+
+git push origin b1    #upload local repository content to a remote repository
+
+git push origin b2    #upload local repository content to a remote repository
+
+git push origin ayush_shukla     #upload local repository content to a remote repository   
