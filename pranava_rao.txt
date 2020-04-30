@@ -1,3 +1,5 @@
+Description of commands that I have used:
+
 git clone : to clone a repo into new directory
 git checkout -b branchname : creating and shifting to a new branch
 git checkout branchname: switching to that branch
@@ -7,4 +9,46 @@ git mv oldname newname: renaming file
 touch : creating files
 git push: pushes to local repo
 git status: status of staging area of index
+
+Sequence of commands I've used:
+
+git clone https://github.com/PranavaRaoG/Spider_Orientation_Programme.git
+cd Spider_Orientation_Programme/
+git checkout -b pranava_rao
+touch log.txt	#added text manually
+git add log.txt
+git commit -m'log.txt added'
+git checkout master
+git checkout -b branch1
+touch answer.txt
+git add answer.txt
+git commit -m'answer added'
+git checkout master
+git checkout -b branch2
+touch answer.txt
+git add answer.txt
+git commit -m'explanation added'
+git checkout branch1
+git merge branch2
+#manually resloved the conflict
+git add answer.txt
+git commit -m'error resolved'
+git checkout branch1
+git mv answer.txt pranava_ans.txt
+git add pranava_ans.txt
+git commit -m'answer.txt renamed to pranava_asnwer.txt'
+git checkout pranava_rao
+git mv log.txt pranava_rao.txt
+git add pranava_rao.txt
+git commit -m'renamed log.txt to pranava_rao.txt'
+git checkout master
+git push origin master
+git push origin pranava_rao
+git push origin branch1
+git push origin branch2
+git checkout master
+git merge pranava_rao
+git merge branch1
+git commit
+git push origin master
 
