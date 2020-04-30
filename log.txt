@@ -1,0 +1,10 @@
+git clone : to clone a repo into new directory
+git checkout -b branchname : creating and shifting to a new branch
+git checkout branchname: switching to that branch
+git add<file> : adding files to the staging area
+git commit :  commiting changes and putting them into local repo
+git mv oldname newname: renaming file
+touch : creating files
+git push: pushes to local repo
+git status: status of staging area of index
+
