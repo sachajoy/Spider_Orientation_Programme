@@ -1,0 +1,50 @@
+The sequence of git commands i have used are:
+git clone https://github.com/saloni-rakholiya/Spider_Orientation_Programme.git
+cd Spider_Orientation_Programme/
+git branch saloni_rakholiya 
+git checkout saloni_rakholiya
+touch log.txt
+// editing the file manually or else using echo" ">>log.txt
+git add log.txt / git add .
+git commit -m"added log.txt"
+git push origin saloni_rakholiya 
+git branch first
+git branch second 
+git checkout first
+touch answer.txt
+//edit manually or echo " ">>answer.txt
+git add answer.txt / git add .
+git commit -m"added answer.txt"
+git push origin first 
+git chekcout second 
+touch answer.txt 
+//edit manually or echo " ">>answer.txt
+git add answer.txt/git add .
+git commit -m"description added"
+git push origin second
+git checkout first 
+git merge second
+//error comes so change answer.txt manually 
+git add answer.txt/git add .
+git commit -m"error resolved"
+git push origin first 
+git checkout saloni_rakholiya
+git merge first 
+git push origin slaoni_rakholiya 
+mv log.txt saloni_rakholiya.txt
+git add saloni_rakholiya.txt/ git add .
+git commit -m"changed name"
+git push origin saloni_rakholiya
+
+
+
+Thedescription of the git commands I have used:
+1. git clone <url> : This was to copy git repository from the given link by the mentor to my system.
+2. git branch branchname : To create a new branch
+3. git checkout: to go to a particular branch
+4. git add: To add a file to the staging area
+5.git commit: commit changes to the head
+6. git push origin master:Send changes to the master branch of your remote repository:
+7. git merge: To merge a branch to another 
+8.  touch: One step creating new files
+
