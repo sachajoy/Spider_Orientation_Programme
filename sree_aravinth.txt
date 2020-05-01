@@ -1,3 +1,43 @@
+$ git branch sree_aravinth
+$ git checkout sree_aravinth
+$ git add log.txt
+$ git commit -m "added log.txt"
+$ git push origin sree_aravinth
+$ git branch branch1
+$ git checkout branch1
+$ git add anwser.txt
+$ git commit -m "added anwser.txt"
+$ git push origin branch1
+$ git checkout sree_aravinth
+$ git branch branch2
+$ git checkout branch2
+$ git add anwser.txt
+$ git commit -m "added anwser.txt in branch 2"
+$ git push origin branch2
+$ git checkout branch1
+$ git merge branch2
+
+Error:
+CONFLICT (add/add): Merge conflict in anwser.txt
+Auto-merging anwser.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+After resolving conflicts manually
+$ git add anwser.txt
+$ git commit -m "added final anwser"
+$ git push origin branch1
+$ git checkout sree_aravinth
+$ git merge branch1
+$ git push origin sree_aravinth
+$ git add sree_aravinth.txt
+$ git commit -m "added sree_aravinth.txt"
+$ git push origin sree_aravinth
+$ git add sreearavinth_anwser.txt
+$ git commit -m "added sreearavinth_anwser.txt"
+$ git push origin sree_aravinth
+
+
+
 git clone [url] : retrieve an entire repository from a hosted location via URL
 git branch branchname : create a new branch at the current commit
 git checkout: switch to another branch and check it out into your working directory
