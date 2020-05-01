@@ -1,0 +1,10 @@
+git clone [url] : retrieve an entire repository from a hosted location via URL
+git branch branchname : create a new branch at the current commit
+git checkout: switch to another branch and check it out into your working directory
+git add: To add a file to the staging area
+git commit: commit your staged content as a new commit snapshot
+git push origin master:Transmit local master branch commits to the remote repository master branch
+git merge: merge the specified branch’s history into the current one 
+
+
+
