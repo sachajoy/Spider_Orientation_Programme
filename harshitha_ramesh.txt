@@ -1,0 +1,43 @@
+The commands used in the task are-
+git clone: to create a clone of the link provided by mentor on the local system
+cd: to change directory
+git branch: to create a new branch
+git checkout: to switch to a new branch
+git checkout -b : to create and switch to a new branch
+git add: to add a new file to the staging area
+git commit -m: used to add a message along with a committed change to the head
+git merge: to merge 2 branches
+git push origin: Send changes to the remote repository
+
+The code-
+git clone https://github.com/harshitha148/Spider_Orientation_Programme
+cd Spider_Orientation_Programme
+git branch harshitha_ramesh
+git checkout harshitha_ramesh
+git add log.txt
+git commit -m "log.txt added"
+git checkout master
+git checkout -b branch1
+git add harshitha_ans.txt
+git commit -m "answer added"
+git checkout master
+git checkout -b branch2
+git add harshitha_ans.txt
+git commit -m "reason added"
+git checkout branch1
+git merge branch2
+(after resolving merge conflicts manually)
+git add harshitha_ans.txt
+git commit -m "resloved merge conflict"
+git checkout harshitha_ramesh
+git merge branch1
+git add harshitha_ans.txt
+git add log.txt
+git commit -m "final files"
+git mv log.txt harshitha_ramesh.txt
+git add harshitha_ramesh.txt
+git commit -m "Changed log.txt to harshitha_ramesh.txt"
+git push origin master
+git push origin harshitha_ramesh
+git push origin branch1
+git push origin branch2
