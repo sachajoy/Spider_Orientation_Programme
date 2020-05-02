@@ -17,5 +17,38 @@ git merge branch_name
 git push origin 
 	To push the changes made in the local repository into the remote repository
 
+The code:
+git clone https://github.com/harshitha148/Spider_Orientation_Programme 
+
+git checkout -b evin_xavier
+ touch evin.txt
+ git add evin.txt
+ git status
+ git commit 
+git checkout master
+
+git checkout branch1
+ touch smallAns.txt
+ git add smallAns.txt
+ git commit -m "Small Answer"
+git checkout master
+
+git checkout branch2
+ touch longAns.txt
+ git add longAns.txt
+ git commit -m "Long Answer"
+git checkout branch1
+ 
+ git merge branch2
+//After solving conflicts//
+
+git checkout evin_xavier
+git push origin evin_xavier
+git push origin branch1
+git push origin branch2
+git push origin master
+
+
+ 
  
 	
