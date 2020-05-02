@@ -1,0 +1,46 @@
+//COMMANDS USED IN THE ABOVE TASK:
+git clone--retrive an entire repository from a hosted location via URL.
+git push origin--to upload local repository content to a remote repository.
+cd--to change the directory.
+git branch--create a new branch at the current commit.
+git checkout--switch to another branch and check it out into your working directory
+git merge[branch]--merge the speicified branch's history into the current one.
+git checkout -b --to create and switch to the new branch
+git add[file]--add a file as it looks now into your next commit(stage).
+git commit -m "[descriptive message]"--commit your staged content as a new commit snapshot.
+touch [filename]--adding the file to the current index.
+git mv--move or rename a file or directory.
+
+//SEQUENCE OF THE COMMANDS USED:
+git clone https://github.com/harshitha148/Spider_Orientation_Programme
+cd Spider_Orientation_Programme
+git branch anjani_satti
+git checkout anjani_satti
+touch log.txt
+git add log.txt
+git commit -m "log.txt added"
+git checkout master
+git checkout -b branch_one
+touch anjani_mainans.txt
+git add anjani_mainans.txt
+git commit -m "main answer added"
+git checkout master
+git checkout -b branch_two
+merge branch_one 
+(resolve merge conflicts manually and merge made by 'recursive' strategy)
+touch anjani_mainans.txt
+git add anjani_mainans.txt
+git commit -m "resolved merge conflict manually"
+git checkout anjani_satti
+git merge branch_one 
+(resolve merge conflicts manually and merge made by 'recursive' strategy)
+git add anjani_mainans.txt
+git add log.txt
+git commit -m "enter files"
+git mv log.txt anjani_satti.txt
+git add anjani_satti.txt
+git commit -m "changed the file log.txt to anjani_satti.txt
+git push origin anjani_satti
+git push origin master
+git push origin branch_one
+git push origin branch_two
