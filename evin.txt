@@ -1,0 +1,21 @@
+git clone URL
+	To create a copy of the link provided in github.
+git checkout -b branch_name
+	To create and move to a newly created branch
+git checkout branch_name
+	To move to the branch that is specified.
+touch file_name
+	To create a new file 
+git add file_name
+	To add the file to the staging area
+git status
+	To check the status of the files in the staging area
+git commit -m "message"
+	To commit the add files to the local repository with a message
+git merge branch_name
+	To merge two branches.
+git push origin 
+	To push the changes made in the local repository into the remote repository
+
+ 
+	
