@@ -1,0 +1,33 @@
+//SEQUENCE OF THE COMMANDS USED:
+git clone https://github.com/harshitha148/Spider_Orientation_Programme
+cd Spider_Orientation_Programme
+git branch anjani_satti
+git checkout anjani_satti
+touch log.txt
+git add log.txt
+git commit -m "log.txt added"
+git checkout master
+git checkout -b branch_one
+touch anjani_mainans.txt
+git add anjani_mainans.txt
+git commit -m "main answer added"
+git checkout master
+git checkout -b branch_two
+merge branch_one 
+(resolve merge conflicts manually and merge made by 'recursive' strategy)
+touch anjani_mainans.txt
+git add anjani_mainans.txt
+git commit -m "resolved merge conflict manually"
+git checkout anjani_satti
+git merge branch_one 
+(resolve merge conflicts manually and merge made by 'recursive' strategy)
+git add anjani_mainans.txt
+git add log.txt
+git commit -m "enter files"
+git mv log.txt anjani_satti.txt
+git add anjani_satti.txt
+git commit -m "changed the file log.txt to anjani_satti.txt
+git push origin anjani_satti
+git push origin master
+git push origin branch_one
+git push origin branch_two
